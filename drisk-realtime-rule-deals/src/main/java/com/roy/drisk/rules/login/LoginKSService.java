@@ -8,7 +8,7 @@ import com.roy.drisk.rules.riskchk.BaseChkPredeal;
 import com.roy.drisk.rules.utils.MessageValidator;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/5
  * @desc
  */

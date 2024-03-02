@@ -1,8 +1,8 @@
 package com.roy.drisk.connector.database;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 数据库连接器常量
  */
 public final class DatabaseConstants {

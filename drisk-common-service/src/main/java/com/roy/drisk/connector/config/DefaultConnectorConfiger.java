@@ -8,8 +8,8 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 默认的connectorconfiger的实现。默认加载类路径下的connector.properties
  */
 public class DefaultConnectorConfiger implements ConnectorConfiger {

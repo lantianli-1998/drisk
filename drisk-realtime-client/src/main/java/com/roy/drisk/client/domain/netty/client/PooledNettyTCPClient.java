@@ -17,8 +17,8 @@ import org.slf4j.LoggerFactory;
 import java.net.InetSocketAddress;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc Netty连接池客户端
  */
 public class PooledNettyTCPClient extends AbstractNettyTCPClient {

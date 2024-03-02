@@ -6,8 +6,8 @@ import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc
  *  * 后处理事件处理器基类，此类型的处理器在前处理时在<code>ContextAttributes</code>中申请相应的{@link Queue}，
  *  * 在引擎处理时，若调用{@link EngineContext#sendEvent(Object)}发送事件，则在后处理时对接收到的

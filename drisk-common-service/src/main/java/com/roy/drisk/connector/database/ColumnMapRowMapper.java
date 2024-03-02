@@ -6,8 +6,8 @@ import java.sql.SQLException;
 import java.util.Map;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc
  */
 public class ColumnMapRowMapper implements RowMapper<Map<String, Object>> {

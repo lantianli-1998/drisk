@@ -7,8 +7,8 @@ import java.sql.*;
 import java.util.Collection;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc JDBC工具类
  */
 public class JdbcUtil {

@@ -17,8 +17,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc
  */
 public class ByteArrayClientHandler extends SimpleChannelInboundHandler<byte[]> implements MessageSender {

@@ -10,8 +10,8 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 
 /**
- * @author roy
- * @date 2021/10/31
+ * @author lantianli
+ * @date 2023/10/31
  * @desc 测试类
  */
 public abstract class Settings {

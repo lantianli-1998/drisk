@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 import java.nio.charset.Charset;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc Message配置类，由spring从properties中加载以message为前缀的相关配置。
  */
 @Component

@@ -1,8 +1,8 @@
 package com.roy.drisk.message;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc 返回码常量
  */
 public abstract class ResultCodeConstants {

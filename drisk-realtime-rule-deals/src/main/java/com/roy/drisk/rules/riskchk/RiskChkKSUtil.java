@@ -8,7 +8,7 @@ import org.apache.commons.lang.StringUtils;
 import java.util.Map;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/7
  * @desc 触发规则后的公共处理方法。
  * RULE_TRIGGERED字段记录所有触发了的规则ID。

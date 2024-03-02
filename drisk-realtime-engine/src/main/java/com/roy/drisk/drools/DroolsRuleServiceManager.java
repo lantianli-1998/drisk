@@ -14,8 +14,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc
  * Drools规则服务管理类，用于管理依附于规则的Service的生命周期。
  * <code>DroolsRuleServiceManager</code>初始化时，根据baseName及sessionName

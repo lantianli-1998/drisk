@@ -3,8 +3,8 @@ package com.roy.drisk.server.netty.deadlock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc
  * 线程死锁探测日志
  */

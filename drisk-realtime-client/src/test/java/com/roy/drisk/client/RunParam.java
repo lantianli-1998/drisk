@@ -1,7 +1,7 @@
 package com.roy.drisk.client;
 
 /**
- * User: QC
+ * @author lantianli
  * Date: 2016-07-15
  * Time: 09:12
  */

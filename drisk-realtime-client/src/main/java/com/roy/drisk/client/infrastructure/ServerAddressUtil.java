@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * User: QC
- * Date: 2016-05-03
+ * @author lantianli
+ * @date 2023/10-03
  * Time: 15:41
  */
 public abstract class ServerAddressUtil {

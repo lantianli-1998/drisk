@@ -22,8 +22,8 @@ import java.util.stream.Collectors;
 
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 数据库连接器。用于创建及维护数据库连接池，及生成MyBatis的SqlSession
  */
 public class DatabaseConnector implements AutoCloseable, ClosedStatusAware {

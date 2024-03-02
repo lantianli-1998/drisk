@@ -6,8 +6,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc 用于记录统计信息的工具类
  */
 public class Stats {

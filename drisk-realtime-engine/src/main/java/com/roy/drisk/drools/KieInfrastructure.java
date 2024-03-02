@@ -25,8 +25,8 @@ import static com.roy.drisk.engine.util.MavenUtil.parseCoordinatesString;
 
 
 /**
- * @author roy
- * @date 2021/10/31
+ * @author lantianli
+ * @date 2023/10/31
  * @desc
  * Kie相关基础设施管理类，<code>KieInfrastructure</code>根据配置的Maven坐标
  * 为各规则包初始化{@link ReleaseId}、{@link KieContainer}、{@link KieScanner}，

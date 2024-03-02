@@ -12,8 +12,8 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc JedisCluster客户端代理类
  */
 public class RedisClusterClient implements CloseableJedisCommands {
@@ -22,7 +22,7 @@ public class RedisClusterClient implements CloseableJedisCommands {
     public RedisClusterClient(JedisCluster client) {
         this.client = client;
     }
-    
+
     public String set(String key, String value) {
         return client.set(key, value);
     }

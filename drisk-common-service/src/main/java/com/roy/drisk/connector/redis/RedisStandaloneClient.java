@@ -12,17 +12,17 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/8
  * @desc 客户端代理类
  */
 public class RedisStandaloneClient implements CloseableJedisCommands {
     private Jedis jedis;
-    
+
     public RedisStandaloneClient(Jedis jedis) {
         this.jedis = jedis;
     }
-    
+
     public String set(String key, String value) {
         return jedis.set(key, value);
     }

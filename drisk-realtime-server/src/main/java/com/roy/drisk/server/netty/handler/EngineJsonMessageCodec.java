@@ -7,7 +7,7 @@ import io.netty.channel.ChannelHandler;
 import org.springframework.stereotype.Component;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/8
  * @desc 解析消息报问题
  */

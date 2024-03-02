@@ -6,7 +6,7 @@ import com.roy.drisk.message.ContextMessage;
 import java.math.BigDecimal;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/9
  * @desc 针对支付交易的前处理类
  */

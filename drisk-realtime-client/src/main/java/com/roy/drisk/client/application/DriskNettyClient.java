@@ -6,8 +6,8 @@ import com.roy.drisk.message.ResponseMessage;
 import java.io.Closeable;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc 往实时风控发送报文检查的客户端
  */
 public interface DriskNettyClient extends Closeable {

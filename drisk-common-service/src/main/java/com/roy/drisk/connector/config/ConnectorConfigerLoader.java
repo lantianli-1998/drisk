@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.ServiceLoader;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 负责加载connector初始化需要的外部配置，
  * 加载机制如下：<br/>
  * 使用JDK提供的{@link ServiceLoader}机制查找是否有实现类，

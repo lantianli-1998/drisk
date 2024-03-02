@@ -7,8 +7,8 @@ import static com.roy.drisk.message.MessageDataUtil.itemByPath;
 import static com.roy.drisk.message.MessageDataUtil.stringItemByPath;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc 业务数据传递类
  */
 public class MessageDataWalker {

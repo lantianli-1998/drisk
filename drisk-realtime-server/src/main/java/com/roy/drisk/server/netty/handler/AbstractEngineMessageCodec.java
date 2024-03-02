@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc  解析消息报文体，
  * 请求报文从目标格式反序列化为<code>RequestMessage</code>，同时设置消息来源IP到<code>RequestMessage</code>中，
  * 响应报文从<code>ResponseMessage</code>序列化为目标格式

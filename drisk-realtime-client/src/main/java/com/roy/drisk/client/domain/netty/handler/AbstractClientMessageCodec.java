@@ -9,8 +9,8 @@ import io.netty.handler.codec.MessageToMessageCodec;
 import java.util.List;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc  解析消息报文体，
  * 请求报文从<code>RequestMessage</code>序列化为目标格式，
  * 响应报文从目标格式反序列化为<code>ResponseMessage</code>

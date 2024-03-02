@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.Map;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc 响应信息
  */
 public class ResponseMessage extends CommonMessage implements Serializable {

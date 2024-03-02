@@ -19,8 +19,8 @@ import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc  <code>ByteArrayEngineHandler</code>处理接收到的二进制协议，
  * 调用规则引擎<code>Engine</code>处理业务逻辑，并返回响应。
  * 对于非KeepAlived链接，返回后断开连接，对于读写超时也会自动断开链接。

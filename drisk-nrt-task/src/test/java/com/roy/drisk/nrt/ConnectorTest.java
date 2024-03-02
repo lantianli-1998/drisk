@@ -6,7 +6,7 @@ import com.roy.drisk.connector.service.DriskConnectorFactory;
 import org.junit.Test;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/14
  * @desc
  */

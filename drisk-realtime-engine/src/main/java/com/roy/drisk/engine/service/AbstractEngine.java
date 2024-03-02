@@ -24,8 +24,8 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 规则引擎公共抽象
  */
 public abstract class AbstractEngine implements Engine {

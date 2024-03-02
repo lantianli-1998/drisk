@@ -20,8 +20,8 @@ import org.springframework.stereotype.Component;
 import java.util.Queue;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc
  * <code>HttpNotifier</code>用于处理Http通知事件，
  * 若收到的业务流程中需要在处理完成后发送Http通知，则可以使用{@link EngineContext#sendEvent(Object)}

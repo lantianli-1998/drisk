@@ -5,8 +5,8 @@ import com.roy.drisk.message.RequestMessage;
 import com.roy.drisk.message.ResponseMessage;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc Engine输入输出消息的编解码。
  */
 public interface ContextMessageCodec {

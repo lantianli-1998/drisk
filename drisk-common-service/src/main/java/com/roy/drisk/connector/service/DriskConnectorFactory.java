@@ -22,8 +22,8 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 提供了实例化{@link SwordConnector}类
  * 及获取其所管理的connector的工厂方法。
  */
@@ -111,7 +111,7 @@ public class DriskConnectorFactory {
     public static CloseableJedisCommands getRedisClient() {
         return getRedisConnector().getClient();
     }
-    
+
     public static CloseableJedisBatchCommands getRedisBatch() {
         return getRedisConnector().getBatchClient();
     }

@@ -1,8 +1,8 @@
 package com.roy.drisk.exception;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc
  */
 public class DriskClientException extends RuntimeException{

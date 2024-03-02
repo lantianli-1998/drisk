@@ -7,7 +7,7 @@ import org.apache.htrace.fasterxml.jackson.core.JsonProcessingException;
 import org.apache.htrace.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/8
  * @desc
  */

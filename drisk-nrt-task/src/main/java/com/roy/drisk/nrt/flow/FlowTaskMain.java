@@ -26,7 +26,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 /** 流式计算引擎
- * @author roy
+ * @author lantianli
  * @date 2021/11/7
  * @desc 流式累计计算任务入口 -Ddrisk.env=sit
  *  将消息转换成统一的Txlog对象，进行累计后将TxLog转发到kafka，后续可以针对TxLog流进行SQL查询以及CEP处理。

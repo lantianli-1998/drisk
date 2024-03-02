@@ -21,8 +21,8 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc
  * <code>JournalPublisher</code>用于在业务处理完成后向Kafka发送日志流水消息，
  * 此类型的消息将由非实时风控处理。

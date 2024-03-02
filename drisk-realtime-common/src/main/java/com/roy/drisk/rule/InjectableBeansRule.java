@@ -5,8 +5,8 @@ import com.roy.drisk.context.EngineContextIter;
 import java.util.Map;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc
  * 规则服务是否向规则引擎注入Bean，实现此接口的规则服务，
  * 由Engine在前处理后，调用规则前向规则引擎注入Bean。

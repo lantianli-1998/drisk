@@ -5,8 +5,8 @@ import com.roy.drisk.message.RequestMessage;
 import com.roy.drisk.message.ResponseMessage;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc
  */
 public interface MessageSender {

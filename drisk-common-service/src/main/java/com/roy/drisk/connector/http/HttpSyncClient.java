@@ -12,8 +12,8 @@ import org.apache.http.protocol.HttpContext;
 import java.io.IOException;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc <code>CloseableHttpClient</code>代理类，屏蔽了{@link #close()}方法，由Connector统一管理
  */
 public class HttpSyncClient {

@@ -5,8 +5,8 @@ import redis.clients.jedis.JedisPoolConfig;
 import java.util.Properties;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc JedisPoolConfig初始化工具类
  */
 public class JedisPoolConfigUtil {

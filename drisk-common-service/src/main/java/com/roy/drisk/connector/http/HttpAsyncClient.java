@@ -14,8 +14,8 @@ import java.io.IOException;
 import java.util.concurrent.Future;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc
  */
 public class HttpAsyncClient {

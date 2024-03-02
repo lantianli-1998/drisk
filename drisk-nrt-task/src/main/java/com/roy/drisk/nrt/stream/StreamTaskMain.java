@@ -27,7 +27,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 import java.util.Properties;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/7
  * @desc 累计型规则计算示例
  */

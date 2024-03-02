@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc HBase的Connection代理类。由Connector统一关闭。
  */
 public class HBaseConnection {

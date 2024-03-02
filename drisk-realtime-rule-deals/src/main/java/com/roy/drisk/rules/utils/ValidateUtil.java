@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.Arrays;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/8
  * @desc 消息字段检查工具类
  */

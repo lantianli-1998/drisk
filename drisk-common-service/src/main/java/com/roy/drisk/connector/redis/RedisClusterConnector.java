@@ -18,8 +18,8 @@ import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 集群模式Redis连接器，用于创建及管理Redis集群客户端。
  */
 public class RedisClusterConnector implements BaseRedisConnector {

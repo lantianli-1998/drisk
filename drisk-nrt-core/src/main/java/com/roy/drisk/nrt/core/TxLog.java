@@ -1,7 +1,7 @@
 package com.roy.drisk.nrt.core;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/8
  * @desc 交易日志对象，综合所有的交易属性。
  *  需要业务端框架配合，这里简化设计。

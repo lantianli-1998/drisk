@@ -5,9 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * User: QC
- * Date: 2016-05-03
- * Time: 16:26
+ * @author lantianli
+ * @date 2023/10-03
  */
 public class RandomServerLoadBalancer implements ServerLoadBalancer {
     private List<InetSocketAddress> transportServers;

@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * User: QC
+ * @author lantianli
  * Date: 2016-07-15
  * Time: 09:23
  */

@@ -11,8 +11,8 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 为Redis增加前端缓存，变换为对象存储。
  */
 public class ObjectRedisLocalCache<T> {

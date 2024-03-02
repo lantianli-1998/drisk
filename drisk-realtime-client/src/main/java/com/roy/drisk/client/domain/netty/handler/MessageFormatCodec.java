@@ -9,8 +9,8 @@ import io.netty.handler.codec.MessageToMessageCodec;
 import java.util.List;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc 解析消息头消息格式代码(1字节)
  */
 @ChannelHandler.Sharable

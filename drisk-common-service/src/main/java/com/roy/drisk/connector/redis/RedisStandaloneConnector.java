@@ -12,8 +12,8 @@ import java.util.Properties;
 import java.util.Set;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 单机模式Redis连接器，用于创建及管理Redis连接池
  */
 public class RedisStandaloneConnector implements BaseRedisConnector {
@@ -47,7 +47,7 @@ public class RedisStandaloneConnector implements BaseRedisConnector {
 	public CloseableJedisBatchCommands getBatchClient() {
 		return new RedisStandaloneBatchClient(jedisPool.getResource());
 	}
-	
+
     @Override
     public boolean isClosed() {
         return jedisPool.isClosed();

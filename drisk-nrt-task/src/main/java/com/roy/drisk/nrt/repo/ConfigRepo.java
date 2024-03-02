@@ -5,7 +5,7 @@ import com.roy.drisk.commonservice.config.EnvProperties;
 import java.util.Properties;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/7
  * @desc 配置信息工厂
  */

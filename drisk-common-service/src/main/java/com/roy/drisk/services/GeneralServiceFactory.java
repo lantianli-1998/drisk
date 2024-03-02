@@ -15,8 +15,8 @@ import java.util.Map;
 import java.util.ServiceLoader;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 服务工厂类，负责创建服务，向调用者返回服务实例，服务发现机制使用JDK的SPI机制
  */
 public class GeneralServiceFactory {

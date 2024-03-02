@@ -24,8 +24,8 @@ import org.slf4j.LoggerFactory;
 import java.net.InetSocketAddress;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc
  */
 public abstract class AbstractNettyTCPClient implements DriskNettyClient {

@@ -16,8 +16,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc  <code>NettyServerChannelInitializer</code>用于设置Netty channel pipline<br/>
  * <code>IdleStateHandler</code>用于监控读写空闲时间，超时时自动断开链接<br/>
  * <code>LengthFieldBasedFrameDecoder</code>用于解析报文头中的前置长度，组包报文体<br/>

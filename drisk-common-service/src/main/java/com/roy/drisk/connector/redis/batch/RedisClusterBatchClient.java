@@ -14,8 +14,8 @@ import java.security.PrivilegedAction;
 import java.util.*;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc <code>JedisCluster</code>客户端代理类，重写了{@link #close()}方法，统一不同模式下客户端的接口
  */
 public class RedisClusterBatchClient extends CloseableJedisBatchCommands {

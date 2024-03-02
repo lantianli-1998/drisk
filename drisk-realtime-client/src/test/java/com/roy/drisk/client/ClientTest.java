@@ -7,8 +7,8 @@ import com.roy.drisk.client.domain.message.client.KafkaMessage;
 import com.roy.drisk.client.domain.message.client.MesageClient;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc
  */
 public class ClientTest {

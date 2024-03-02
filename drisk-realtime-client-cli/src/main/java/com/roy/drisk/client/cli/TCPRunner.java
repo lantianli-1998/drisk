@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * User: QC Date: 2016-07-15 Time: 09:23
+ * @author lantianli Date: 2016-07-15 Time: 09:23
  */
 public class TCPRunner implements Runner {
 	private RunParam param;

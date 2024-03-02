@@ -8,8 +8,8 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 /**
- * @author roy
- * @date 2021/10/26
+ * @author lantianli
+ * @date 2023/10/26
  * @desc 客户端配置类
  */
 public class ClientSettings {

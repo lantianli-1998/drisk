@@ -1,7 +1,7 @@
 package com.roy.drisk.rules.message;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/7
  * @desc 这里主要定义一些跟业务相关的常量
  */

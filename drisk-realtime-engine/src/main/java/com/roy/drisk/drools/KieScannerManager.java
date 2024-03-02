@@ -16,8 +16,8 @@ import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
 /**
- * @author roy
- * @date 2021/10/31
+ * @author lantianli
+ * @date 2023/10/31
  * @desc
  * <code>KieScannerManager</code>用于管理规则文件的自动加载。
  * 当配置的<code>scanInterval</code>小于等于0时，不做自动加载，否则按配置的时间扫描规则文件的变化，

@@ -33,7 +33,7 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * @author roy
+ * @author lantianli
  * @date 2021/11/7
  * @desc 复杂事件任务入口 实现LG002规则
  * 整个CEP处理流程，实现了这个逻辑后，就可以很容易封装出一个扩展机制。

@@ -4,8 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author roy
- * @date 2021/10/27
+ * @author lantianli
+ * @date 2023/10/27
  * @desc 获取当前的运行环境。先检查系统变量drisk.env，没有则检查系统环境变量 DRISK_ENV 。
  * 如果都不存在，则会抛出异常，提示指定运行环境。
  */
