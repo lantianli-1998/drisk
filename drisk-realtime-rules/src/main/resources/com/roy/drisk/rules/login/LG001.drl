@@ -1,0 +1,19 @@
+package com.roy.drisk.rules.login
+
+import com.roy.drisk.message.ContextMessage;
+import com.roy.drisk.rules.message.DroolsConstants;
+import com.roy.drisk.rules.message.DroolsMessageCodes;
+import com.roy.drisk.rules.riskchk.RiskChkKSUtil;
+
+dialect "java"
+
+rule "LG001"
+lock-on-active true
+salience 2000
+    when
+        msg:ContextMessage(
+            msg.walker().tempObj("MBL_IN_BLACK") == true
+        )
+    then
+        RiskChkKSUtil.ruleresult(msg,"LG001",DroolsMessageCodes.MBL_IN_BLACK);
+end

@@ -1,0 +1,20 @@
+package com.roy.drisk.rules.riskchk
+
+import com.roy.drisk.message.ContextMessage;
+import com.roy.drisk.rules.message.DroolsConstants;
+import com.roy.drisk.rules.message.DroolsMessageCodes;
+import com.roy.drisk.rules.riskchk.RiskChkKSUtil;
+import java.math.BigDecimal;
+
+dialect "java"
+
+rule "LJ001"
+lock-on-active true
+salience 1000
+    when
+        msg : ContextMessage(
+            getTempItem("CURRENT_MBL_DAY_SUMAMT") > getTempItem("MBL_DAY_AMT_LIMIT")
+        )
+    then
+        RiskChkKSUtil.ruleresult(msg,"LJ001",DroolsMessageCodes.MBL_DAY_LIMIT_EXCEED);
+end

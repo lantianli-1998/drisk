@@ -1,0 +1,12 @@
+package com.roy.drisk.rules.version
+
+import com.roy.drisk.message.ContextMessage;
+
+dialect "java"
+
+rule "version"
+    when
+        
+    then
+        insert("20211109");
+end

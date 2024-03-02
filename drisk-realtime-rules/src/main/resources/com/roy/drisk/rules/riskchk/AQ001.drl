@@ -1,0 +1,22 @@
+package com.roy.drisk.rules.riskchk
+
+import com.roy.drisk.message.ContextMessage;
+import com.roy.drisk.rules.message.DroolsConstants;
+import com.roy.drisk.rules.message.DroolsMessageCodes;
+import com.roy.drisk.rules.riskchk.RiskChkKSUtil;
+
+dialect "java"
+
+rule "AQ001"
+lock-on-active true
+salience 2000
+    when
+        msg:ContextMessage(
+//            "AQ001" not memberOf msg.getTempItem("RULE_NCHECK_SET") &&
+            msg.walker().req("BSINF.MBL_NO") == msg.walker().req("SIGNINF.BNK_MBL_NO")
+            && msg.walker().req("BSINF.BUS_CNL") == DroolsConstants.BUS_CNL_DRISK
+        )
+    then
+        RiskChkKSUtil.ruleresult(msg,"AQ001",DroolsMessageCodes.SUCC_CODE);
+        drools.halt();
+end

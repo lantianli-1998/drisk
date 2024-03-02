@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="drisk-realtime-client" />
+        <module name="drisk-realtime-rules" />
+        <module name="drisk-nrt-task" />
+        <module name="drisk-nrt-core" />
+        <module name="drisk-common-service" />
+        <module name="drisk-realtime-server" />
+        <module name="drisk-realtime-drllab" />
+        <module name="drisk-realtime-common" />
+        <module name="drisk-realtime-client-cli" />
+        <module name="drisk-realtime-engine" />
+        <module name="drisk-realtime-rule-deals" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="drisk-drllab" target="8" />
+      <module name="drisk-nrt-analysis" target="8" />
+      <module name="drisk-nrt-stream" target="8" />
+      <module name="drisk-service" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

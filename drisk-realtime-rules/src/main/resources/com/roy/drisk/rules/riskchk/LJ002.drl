@@ -1,0 +1,19 @@
+package com.roy.drisk.rules.riskchk
+
+import com.roy.drisk.message.ContextMessage;
+import com.roy.drisk.rules.message.DroolsConstants;
+import com.roy.drisk.rules.message.DroolsMessageCodes;
+import com.roy.drisk.rules.riskchk.RiskChkKSUtil;
+
+dialect "java"
+
+rule "LJ002"
+lock-on-active true
+salience 1000
+    when
+        msg:ContextMessage(
+            msg.walker().tempObj("IS_MBL_IN_DAYLIMIT_BLACK") == true
+        )
+    then
+        RiskChkKSUtil.ruleresult(msg,"LG1002",DroolsMessageCodes.MBL_IN_TRANSFER_BLACK);
+end

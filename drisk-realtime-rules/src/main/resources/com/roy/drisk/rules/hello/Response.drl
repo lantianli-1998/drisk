@@ -1,0 +1,20 @@
+package com.roy.drisk.rules.hello
+
+import com.roy.drisk.engine.context.EngineContext
+import com.roy.drisk.message.ContextMessage
+import com.roy.drisk.message.ResultCodeConstants;
+import java.util.HashMap
+import redis.clients.jedis.JedisCommands
+
+global com.roy.drisk.engine.service.EngineService service
+
+dialect "java"
+
+rule "Response"
+    when
+        msg:ContextMessage(msg.walker().req("HELLO") == "HELLO", msg.resultCode == ResultCodeConstants.INIT_ERROR_CODE)
+    then
+        JedisCommands jedis = service.redis();
+        String ipStr = jedis.echo("ECHO");
+        msg.addRspItem("ECHO", ipStr);
+end

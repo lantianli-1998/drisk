@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+
+  <kbase name="HelloKB" packages="com.roy.drisk.rules.hello">
+    <ksession name="HelloKS"/>
+  </kbase>
+
+  <kbase name="LoginKB" packages="com.roy.drisk.rules.login">
+    <ksession name="LoginKS" />
+  </kbase>
+
+  <kbase name="RiskChkKB" packages="com.roy.drisk.rules.riskchk">
+    <ksession name="RiskChkKS" type="stateless"/>
+  </kbase>
+
+  <kbase name="VersionKB" packages="com.roy.drisk.rules.version">
+  	<ksession name="VersionKS" type="stateful"/>
+  </kbase>
+</kmodule>

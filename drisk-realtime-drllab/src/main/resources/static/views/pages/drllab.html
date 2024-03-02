@@ -1,0 +1,103 @@
+<meta charset="UTF-8">
+<div class="row">
+	<div class="col-sm-12 col-md-12">
+		<form class="form-inline">
+            <button type="button" class="btn btn-success" ng-click="getDrlVersion()">更 新</button>
+            <button type="button" class="btn btn-success" ng-click="requestReport()">测 试</button>
+            <label> 当前rules包版本为：{{ version }}</label>
+        </form>
+	</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-8 col-md-8">
+    	<div class="ibox float-e-margins">
+			<div class="ibox-title">
+				<h5>测试报文</h5>
+			</div>
+			<div class="ibox-content">
+				<textarea ng-model="testRequest" class="form-control" rows="20" spellcheck="false" wrap="hard">{{ selectedData.transIdLogFileContent }}</textarea>
+			</div>
+		</div>
+    </div>
+    <div class="col-sm-4 col-md-4">
+        <div class="ibox float-e-margins">
+			<div class="ibox-title">
+				<h5>触发的规则：</h5>
+			</div>
+			<div class="ibox-content">
+				{{ testInfo }}
+			</div>
+		</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <div class="ibox float-e-margins">
+			<div class="ibox-title">
+				<h5>完整报文：</h5>
+			</div>
+			<div class="ibox-content">
+				{{ contextMessage }}
+			</div>
+		</div>
+    </div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-title">
+				<h5>操作说明：</h5>
+			</div>
+			<div class="ibox-content">
+				<ul>
+					<li><font color="red"> 更新 </font>按钮获取最新drl版本。</li>
+					<li><font color="red"> 测试 </font>按钮进行drl规则测试。</li>
+				</ul><hr /><ul>	
+					<li>报文转换规则：</li>
+					<li>输入报文每行一个属性，需要用分号结尾。</li>
+					<li>tempData对应contextMessage.getTempItem,reqData对应contextMessage.getReqItem</li>
+					<li>字符串用双引号</li>
+					<li>boolean类型用true 和 false</li>
+					<li>字符串数组类型用中括号</li>
+					<li>数值类型直接写数字</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    var pageload = function () {
+    	$scope.testRequest = 'baseName=RiskChkKB; \n'+
+    		'sessionName=RiskChkKS; \n'+
+    		'requestId=201812080001; \n'+
+    		'userNo=123123123; \n'+
+    		'mobileNo=13888888888; \n'+
+    		'reqData.GWA.UENV.clientIp="192.168.0.1"; \n'+
+    		'reqData.BSINF.MBL_NO="13888888888"; \n'+
+    		'reqData.BSINF.BUS_CNL="DPAY"; \n'+
+    		'reqData.SIGNINF.BNK_MBL_NO="13888888888";';
+    	$scope.requestReport = function(){
+    		$http.post("/drlLab/requestPost",{"drlRequest":$scope.testRequest}).success(function(response){
+    			$scope.contextMessage= response;
+    			//response = eval("("+response+")");
+    			if(response.tempData.ConvertError){
+    				$scope.testInfo = "报文转换错误："+response.tempData.ConvertError;	
+    			}else if(response.tempData.runError){
+    				$scope.testInfo = "规则验证错误："+response.tempData.runError;
+    			}else{
+	    			$scope.testInfo = "触发的规则:"+response.tempData.RULE_TRIGGERED;
+    			}
+    			toastr.success("规则测试完成，请查看执行结果","规则实验室");
+    		})
+    	}
+    	
+    	$scope.getDrlVersion = function(){
+    		$scope.version = "版本获取中。。。。。。";
+    		$http.post("/drlLab/getVersion").success(function(response){
+    			$scope.version = response;
+    			toastr.success("版本更新成功，请查看执行结果","规则实验室");
+    		})
+    	}
+    }
+</script>
